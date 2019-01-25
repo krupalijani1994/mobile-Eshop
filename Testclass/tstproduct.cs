@@ -13,7 +13,7 @@ namespace Testclass
             //creates an instance of a class
             clsProduct Aproduct = new clsProduct();
             Assert.IsNotNull(Aproduct);
-                       
+
         }
 
         [TestMethod]
@@ -77,18 +77,7 @@ namespace Testclass
         }
 
 
-        //[TestMethod]
-        //public void ValidMethodOk()
-        //{
-        //    creates an instance of a class
-        //    clsProduct AProduct = new clsProduct();
-        //string Error = "";
-        //string TestData = "Iphone7";
-        //Error = AProduct.Valid(TestData);
-        //    Assert.AreEqual(Error, "");
-
-        //}
-
+        
 
 
 
