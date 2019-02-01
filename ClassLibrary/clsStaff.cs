@@ -16,18 +16,17 @@ namespace ClassLibrary
 
         public string Valid(string TestData)
         {
-            if (TestData != "")
+            string Error = "";
+            if (TestData.Length > 100)
             {
-                //return a blank string
-                return "";
+                Error = "Name of the product cannot be more than 100 characters";
             }
 
-            else
+            if (TestData.Length == 0)
             {
-                // return an error message
-                return "the Staff may not be blank";
-
+                Error = "The Product name cannot be blank";
             }
+            return Error;
+        }
         }
     }
-}

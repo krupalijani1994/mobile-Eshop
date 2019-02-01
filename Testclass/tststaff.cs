@@ -127,5 +127,384 @@ namespace Testclass
             Assert.AreEqual(AStaff.Active, TestData);
         }
 
+
+
+
+
+
+
+
+
+
+
+
+
+        //Staff Address test
+
+        [TestMethod]
+        public void StaffAddressMinMinusOne()
+        {
+            //creates an instance of a class
+            clsStaff AStaff = new clsStaff();
+            string Error = "";
+            string StaffAddress = "";
+            Error = AStaff.Valid(StaffAddress);
+            Assert.AreNotEqual(Error, "");
+
+        }
+
+
+        [TestMethod]
+        public void StaffAddressMin()
+        {
+            //creates an instance of a class
+            clsStaff AStaff = new clsStaff();
+            string Error = "";
+            string StaffAddress = "A";
+            Error = AStaff.Valid(StaffAddress);
+            Assert.AreEqual(Error, "");
+
+        }
+
+
+        [TestMethod]
+        public void StaffAddressMinplusOne()
+        {
+            //creates an instance of a class
+            clsStaff AStaff = new clsStaff();
+            string Error = "";
+            string StaffAddress = "aa";
+            Error = AStaff.Valid(StaffAddress);
+            Assert.AreEqual(Error, "");
+
+        }
+
+
+
+        [TestMethod]
+        public void StaffAddressMaxMinusOne()
+        {
+            //creates an instance of a class
+            clsStaff AStaff = new clsStaff();
+            string Error = "";
+            string StaffAddress = "";
+            StaffAddress = StaffAddress.PadRight(99, 'A');
+            Error = AStaff.Valid(StaffAddress);
+            Assert.AreEqual(Error, "");
+
+        }
+
+        [TestMethod]
+        public void StaffAddressMax()
+        {
+            //creates an instance of a class
+            clsStaff AStaff = new clsStaff();
+            string Error = "";
+            string StaffAddress = "";
+            StaffAddress = StaffAddress.PadRight(100, 'A');
+            Error = AStaff.Valid(StaffAddress);
+            Assert.AreEqual(Error, "");
+
+        }
+        [TestMethod]
+        public void StaffAddressMaxPlusOne()
+        {
+            //creates an instance of a class
+            clsStaff AStaff = new clsStaff();
+            string Error = "";
+            string StaffAddress = "";
+            StaffAddress = StaffAddress.PadRight(101, 'A');
+            Error = AStaff.Valid(StaffAddress);
+            Assert.AreNotEqual(Error, "");
+
+        }
+
+        [TestMethod]
+        public void StaffAddressMid()
+        {
+            //creates an instance of a class
+            clsStaff AStaff = new clsStaff();
+            string Error = "";
+            string StaffAddress = "";
+            StaffAddress = StaffAddress.PadRight(50, 'A');
+            Error = AStaff.Valid(StaffAddress);
+            Assert.AreEqual(Error, "");
+
+        }
+
+        [TestMethod]
+        public void StaffAddressExtermeMax()
+        {
+            //creates an instance of a class
+            clsStaff AStaff = new clsStaff();
+            string Error = "";
+            string StaffAddress = "";
+            StaffAddress = StaffAddress.PadRight(150, 'A');
+            Error = AStaff.Valid(StaffAddress);
+            Assert.AreNotEqual(Error, "");
+
+        }
+
+
+        //Staff Date and time.....
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        //staff email id
+
+
+
+
+
+        [TestMethod]
+        public void StaffEmailMinMinusOne()
+        {
+            //creates an instance of a class
+            clsStaff AStaff = new clsStaff();
+            string Error = "";
+            string StaffEmail = "";
+            Error = AStaff.Valid(StaffEmail);
+            Assert.AreNotEqual(Error, "");
+
+        }
+
+
+        [TestMethod]
+        public void StaffEmailMin()
+        {
+            //creates an instance of a class
+            clsStaff AStaff = new clsStaff();
+            string Error = "";
+            string StaffEmail = "A";
+            Error = AStaff.Valid(StaffEmail);
+            Assert.AreEqual(Error, "");
+
+        }
+
+
+        [TestMethod]
+        public void StaffEmailMinplusOne()
+        {
+            //creates an instance of a class
+            clsStaff AStaff = new clsStaff();
+            string Error = "";
+            string StaffEmail = "aa";
+            Error = AStaff.Valid(StaffEmail);
+            Assert.AreEqual(Error, "");
+
+        }
+
+
+
+        [TestMethod]
+        public void StaffEmailMaxMinusOne()
+        {
+            //creates an instance of a class
+            clsStaff AStaff = new clsStaff();
+            string Error = "";
+            string StaffAddress = "";
+            StaffAddress = StaffAddress.PadRight(49, 'A');
+            Error = AStaff.Valid(StaffAddress);
+            Assert.AreEqual(Error, "");
+
+        }
+
+        [TestMethod]
+        public void StaffEmailMax()
+        {
+            //creates an instance of a class
+            clsStaff AStaff = new clsStaff();
+            string Error = "";
+            string StaffEmail = "";
+            StaffEmail = StaffEmail.PadRight(50, 'A');
+            Error = AStaff.Valid(StaffEmail);
+            Assert.AreEqual(Error, "");
+
+        }
+        //[TestMethod]
+        //public void StaffEmailMaxPlusOne()
+        //{
+        //    //creates an instance of a class
+        //    clsStaff AStaff = new clsStaff();
+        //    string Error = "";
+        //    string StaffAddress = "";
+        //    StaffAddress = StaffAddress.PadRight(51, 'A');
+        //    Error = AStaff.Valid(StaffAddress);
+        //    Assert.AreNotEqual(Error, "");
+
+        //}
+
+        [TestMethod]
+        public void StaffEmailMid()
+        {
+            //creates an instance of a class
+            clsStaff AStaff = new clsStaff();
+            string Error = "";
+            string StaffAddress = "";
+            StaffAddress = StaffAddress.PadRight(25, 'A');
+            Error = AStaff.Valid(StaffAddress);
+            Assert.AreEqual(Error, "");
+        }
+
+        [TestMethod]
+        public void StaffEmailExtermeMax()
+        {
+            //creates an instance of a class
+            clsStaff AStaff = new clsStaff();
+            string Error = "";
+            string StaffAddress = "";
+            StaffAddress = StaffAddress.PadRight(200, 'A');
+            Error = AStaff.Valid(StaffAddress);
+            Assert.AreNotEqual(Error, "");
+
+        }
+
+
+        //Staff First name-------------------------------
+
+        [TestMethod]
+        public void StaffFirstNameMinMinusOne()
+        {
+            //creates an instance of a class
+            clsStaff AStaff = new clsStaff();
+            string Error = "";
+            string StaffFirstName = "";
+            Error = AStaff.Valid(StaffFirstName);
+            Assert.AreNotEqual(Error, "");
+
+        }
+
+
+        [TestMethod]
+        public void StaffFirstNameMin()
+        {
+            //creates an instance of a class
+            clsStaff AStaff = new clsStaff();
+            string Error = "";
+            string StaffFirstName = "A";
+            Error = AStaff.Valid(StaffFirstName);
+            Assert.AreEqual(Error, "");
+
+        }
+
+
+        [TestMethod]
+        public void StaffFirstNameMinplusOne()
+        {
+            //creates an instance of a class
+            clsStaff AStaff = new clsStaff();
+            string Error = "";
+            string StaffFirstName = "aa";
+            Error = AStaff.Valid(StaffFirstName);
+            Assert.AreEqual(Error, "");
+
+        }
+
+
+
+        [TestMethod]
+        public void StaffFirstNameMaxMinusOne()
+        {
+            //creates an instance of a class
+            clsStaff AStaff = new clsStaff();
+            string Error = "";
+            string StaffFirstName = "";
+            StaffFirstName = StaffFirstName.PadRight(19, 'A');
+            Error = AStaff.Valid(StaffFirstName);
+            Assert.AreEqual(Error, "");
+
+        }
+
+        [TestMethod]
+        public void StaffFirstNameMax()
+        {
+            //creates an instance of a class
+            clsStaff AStaff = new clsStaff();
+            string Error = "";
+            string StaffFirstName = "";
+            StaffFirstName = StaffFirstName.PadRight(20, 'A');
+            Error = AStaff.Valid(StaffFirstName);
+            Assert.AreEqual(Error, "");
+
+        }
+        //[TestMethod]
+        //public void StaffFirstNameMaxPlusOne()
+        //{
+        //    //creates an instance of a class
+        //    clsStaff AStaff = new clsStaff();
+        //    string Error = "";
+        //    string StaffFirstName = "";
+        //    StaffFirstName = StaffFirstName.PadRight(21, 'A');
+        //    Error = AStaff.Valid(StaffFirstName);
+        //    Assert.AreNotEqual(Error, "");
+
+        //}
+
+        [TestMethod]
+        public void StaffFirstNameMid()
+        {
+            //creates an instance of a class
+            clsStaff AStaff = new clsStaff();
+            string Error = "";
+            string StaffAddress = "";
+            StaffAddress = StaffAddress.PadRight(10, 'A');
+            Error = AStaff.Valid(StaffAddress);
+            Assert.AreEqual(Error, "");
+
+        }
+
+        [TestMethod]
+        public void StaffFirstNameExtermeMax()
+        {
+            //creates an instance of a class
+            clsStaff AStaff = new clsStaff();
+            string Error = "";
+            string StaffFirstName = "";
+            StaffFirstName = StaffFirstName.PadRight(150, 'A');
+            Error = AStaff.Valid(StaffFirstName);
+            Assert.AreNotEqual(Error, "");
+
+        }
+
+
+
+
+
+
+
     }
 }

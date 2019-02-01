@@ -9,24 +9,24 @@ namespace ClassLibrary
         public decimal ProductPrice { get; set; }
         public int ProductQuantity { get; set; }
 
-        public string Valid(string TestData)
+        public string Valid(string ProductName)
         {
-            if (TestData != "")
+            string Error = "";
+            if (ProductName.Length> 50)
             {
-                //return a blank string
-                return "";
+                Error = "Name of the product cannot be more than 50 characters";
             }
 
-            else
+            if(ProductName.Length==0)
             {
-                // return an error message
-                return "the Product name may not be blank";
-
+                Error = "The Product name cannot be blank";
             }
+                      
+
+            return Error;
         }
 
-
-        
+       
     }
         
 
