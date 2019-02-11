@@ -1,0 +1,54 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+                </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+
+        <link rel="stylesheet" href="css/StyleSheet.css">
+            
+
+<div class="topnav">
+   <ul>
+                <li><a href="#home">Home</a></li>
+        <li class="dropdown"><a href=" abcd" class="dropbtn">Products</a>
+                    <div class="dropdown-content">
+                        <a href="#">Services</a> <a href="#">All Products</a> <a href="#">Track Order</a>
+                    </div>
+                <li><a href="#news">Review and Compare</a></li>
+                <li><a href="#news">Feedback</a></li>
+         <li class="dropdown"><a href=" abcd" class="dropbtn">Account</a>
+                    <div class="dropdown-content">
+                        <a href="#">Change details</a> <a href="#">View Orders</a> <a href="#">Logout</a>
+                    </div>
+        </li>
+                        <li><a href="#home" style="position:fixed; left:90%;"> Register </a></li>
+
+            </ul>
+</div>
+
+
+    <div>
+
+
+
+
+
+
+
+
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+
+        
+           
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>

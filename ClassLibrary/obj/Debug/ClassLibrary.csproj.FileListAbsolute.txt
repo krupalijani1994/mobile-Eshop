@@ -1,6 +1,6 @@
 H:\Desktop\third year\Final year project\Mobile E-shop\ClassLibrary\bin\Debug\ClassLibrary.dll
 H:\Desktop\third year\Final year project\Mobile E-shop\ClassLibrary\bin\Debug\ClassLibrary.pdb
-H:\Desktop\third year\Final year project\Mobile E-shop\ClassLibrary\obj\Debug\ClassLibrary.csprojAssemblyReference.cache
 H:\Desktop\third year\Final year project\Mobile E-shop\ClassLibrary\obj\Debug\ClassLibrary.csproj.CoreCompileInputs.cache
 H:\Desktop\third year\Final year project\Mobile E-shop\ClassLibrary\obj\Debug\ClassLibrary.dll
 H:\Desktop\third year\Final year project\Mobile E-shop\ClassLibrary\obj\Debug\ClassLibrary.pdb
+H:\Desktop\third year\Final year project\Mobile E-shop\ClassLibrary\obj\Debug\ClassLibrary.csprojAssemblyReference.cache

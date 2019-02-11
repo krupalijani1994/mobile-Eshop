@@ -21,7 +21,7 @@ namespace Testclass
         {
             //creates an instance of a class
             clsStaff Astaff = new clsStaff();
-            string TestData = "1";
+            Int32 TestData = 1;
             Astaff.StaffID = TestData;
             Assert.AreEqual(Astaff.StaffID, TestData);
 

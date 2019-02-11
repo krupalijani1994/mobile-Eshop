@@ -4,7 +4,7 @@ namespace ClassLibrary
 {
     public class clsProduct
     {
-        public string ProductID { get; set; }
+        public Int32 ProductID { get; set; }
         public string ProductName { get; set; }
         public decimal ProductPrice { get; set; }
         public int ProductQuantity { get; set; }
@@ -21,8 +21,17 @@ namespace ClassLibrary
             {
                 Error = "The Product name cannot be blank";
             }
-                      
+                 
+            //if(ProductPrice == 0)
+            //{
 
+            //    Error = "sss";
+            //}
+
+            //if (ProductPrice > 10)
+            //{
+            //    Error = "The xxxx";
+            //}
             return Error;
         }
 

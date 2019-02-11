@@ -23,7 +23,7 @@ namespace Testclass
         {
             //creates an instance of a class
             clsProduct Aproduct = new clsProduct();
-            string TestData = "1";
+            Int32 TestData = 1;
             Aproduct.ProductID = TestData;
             Assert.AreEqual(Aproduct.ProductID, TestData);
 
@@ -73,7 +73,7 @@ namespace Testclass
             clsProduct AProduct = new clsProduct();
             string Error = "";
             string ProductName = "Iphone7";
-           
+            //decimal ProductPrice = (decimal)10.00;
             Error = AProduct.Valid(ProductName);
             Assert.AreEqual(Error, "");
 
@@ -91,6 +91,7 @@ namespace Testclass
             clsProduct AProduct = new clsProduct();
             string Error = "";
             string ProductName = "";
+            //decimal ProductPrice = (decimal)10.00;
             Error = AProduct.Valid(ProductName);
             Assert.AreNotEqual(Error, "");
 
@@ -103,7 +104,8 @@ namespace Testclass
             //creates an instance of a class
             clsProduct AProduct = new clsProduct();
             string Error = "";
-            string ProductName = "A";
+            string ProductName = "Iphone7";
+            //decimal ProductPrice = (decimal)10.00;
             Error = AProduct.Valid(ProductName);
             Assert.AreEqual(Error, "");
 
@@ -191,7 +193,7 @@ namespace Testclass
 
         //Testing Product Price according to the test plan
 
-        
+
         [TestMethod]
         public void ProductPriceMinMinusOne()
         {
@@ -263,10 +265,10 @@ namespace Testclass
         //public void productpricemaxplusone()
         //{
         //    //creates an instance of a class
-        //    clsProduct aproduct = new clsProduct();
+        //    clsProduct AProduct = new clsProduct();
         //    string error = "";
-        //    string productprice = "01234567890.00";
-        //    error = aproduct.Valid(productprice);
+        //    string ProductPrice = "01234567890.00";
+        //    error = AProduct.Valid(ProductPrice);
         //    Assert.AreNotEqual(error, "");
 
         //}

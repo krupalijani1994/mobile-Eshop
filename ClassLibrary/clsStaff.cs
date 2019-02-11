@@ -4,7 +4,7 @@ namespace ClassLibrary
 {
     public class clsStaff
     {
-        public string StaffID { get; set; }
+        public Int32 StaffID { get; set; }
         public string StaffAddress { get; set; }
         public string StaffEmail { get; set; }
         public string StaffFirstName { get; set; }
