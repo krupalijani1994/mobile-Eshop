@@ -4,28 +4,58 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace Testclass
 {
+   
+
     [TestClass]
     public class tstproduct
     {
+        
+        string ProductName="iphone7";
+        string ProductPrice= "10.10";
+        string ProductQuantity = "10";
+        
 
         // performing property test
         [TestMethod]
         public void InstanceOk()
         {
             //creates an instance of a class
-            clsProduct Aproduct = new clsProduct();
-            Assert.IsNotNull(Aproduct);
+            clsProduct AProduct = new clsProduct();
+            Assert.IsNotNull(AProduct);
 
         }
+
+        public void ActivePropertyok()
+        {
+            //creates an instance of a class
+            clsProduct Aproduct = new clsProduct();
+            Boolean TestData = true;
+            Aproduct.ProductActive = TestData;
+            Assert.AreEqual(Aproduct.ProductActive, TestData);
+
+        }
+
+        [TestMethod]
+        public void FindmethodOk()
+        {
+            //creates an instance of a class
+            clsProduct AProduct = new clsProduct();
+            Boolean Found = false;
+            Int32 ProductID = 1;
+            Found = AProduct.Find(ProductID);
+            Assert.IsTrue(Found);
+
+        }
+
 
         [TestMethod]
         public void ProductIDPropertyOk()
         {
             //creates an instance of a class
-            clsProduct Aproduct = new clsProduct();
+            clsProduct AProduct = new clsProduct();
             Int32 TestData = 1;
-            Aproduct.ProductID = TestData;
-            Assert.AreEqual(Aproduct.ProductID, TestData);
+            AProduct.ProductID = TestData;
+            Assert.AreEqual(AProduct.ProductID, TestData);
 
         }
 
@@ -34,10 +64,10 @@ namespace Testclass
         public void ProductNamePropertyOk()
         {
             //creates an instance of a class
-            clsProduct Aproduct = new clsProduct();
+            clsProduct AProduct = new clsProduct();
             string TestData = "iphone7";
-            Aproduct.ProductName = TestData;
-            Assert.AreEqual(Aproduct.ProductName, TestData);
+            AProduct.ProductName = TestData;
+            Assert.AreEqual(AProduct.ProductName, TestData);
 
         }
 
@@ -46,10 +76,10 @@ namespace Testclass
         public void ProductPricePropertyOk()
         {
             //creates an instance of a class
-            clsProduct Aproduct = new clsProduct();
+            clsProduct AProduct = new clsProduct();
             decimal TestData = (decimal) 200.99;
-            Aproduct.ProductPrice = TestData;
-            Assert.AreEqual(Aproduct.ProductPrice, TestData);
+            AProduct.ProductPrice = TestData;
+            Assert.AreEqual(AProduct.ProductPrice, TestData);
 
         }
 
@@ -57,10 +87,10 @@ namespace Testclass
         public void ProductQuantityPropertyOk()
         {
             //creates an instance of a class
-            clsProduct Aproduct = new clsProduct();
+            clsProduct AProduct = new clsProduct();
             Int32 TestData = 1;
-            Aproduct.ProductQuantity = TestData;
-            Assert.AreEqual(Aproduct.ProductQuantity, TestData);
+            AProduct.ProductQuantity = TestData;
+            Assert.AreEqual(AProduct.ProductQuantity, TestData);
 
         }
 
@@ -72,9 +102,9 @@ namespace Testclass
             //creates an instance of a class
             clsProduct AProduct = new clsProduct();
             string Error = "";
-            string ProductName = "Iphone7";
+            //string ProductName = "iphone7";
             //decimal ProductPrice = (decimal)10.00;
-            Error = AProduct.Valid(ProductName);
+            Error = AProduct.Valid(ProductName, ProductPrice, ProductQuantity);
             Assert.AreEqual(Error, "");
 
         }
@@ -91,8 +121,8 @@ namespace Testclass
             clsProduct AProduct = new clsProduct();
             string Error = "";
             string ProductName = "";
-            //decimal ProductPrice = (decimal)10.00;
-            Error = AProduct.Valid(ProductName);
+           
+            Error = AProduct.Valid(ProductName,ProductPrice,ProductQuantity);
             Assert.AreNotEqual(Error, "");
 
         }
@@ -106,7 +136,7 @@ namespace Testclass
             string Error = "";
             string ProductName = "Iphone7";
             //decimal ProductPrice = (decimal)10.00;
-            Error = AProduct.Valid(ProductName);
+            Error = AProduct.Valid(ProductName, ProductPrice, ProductQuantity);
             Assert.AreEqual(Error, "");
 
         }
@@ -119,7 +149,7 @@ namespace Testclass
             clsProduct AProduct = new clsProduct();
             string Error = "";
             string ProductName = "Ab";
-            Error = AProduct.Valid(ProductName);
+            Error = AProduct.Valid(ProductName, ProductPrice, ProductQuantity);
             Assert.AreEqual(Error, "");
 
         }
@@ -133,7 +163,7 @@ namespace Testclass
             clsProduct AProduct = new clsProduct();
             string Error = "";
             string ProductName = "ABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVW";
-            Error = AProduct.Valid(ProductName);
+            Error = AProduct.Valid(ProductName,ProductPrice, ProductQuantity);
             Assert.AreEqual(Error, "");
 
         }
@@ -146,7 +176,7 @@ namespace Testclass
             clsProduct AProduct = new clsProduct();
             string Error = "";
             string ProductName = "ABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWX";
-            Error = AProduct.Valid(ProductName);
+            Error = AProduct.Valid(ProductName, ProductPrice, ProductQuantity);
             Assert.AreEqual(Error, "");
 
         }
@@ -160,7 +190,7 @@ namespace Testclass
             clsProduct AProduct = new clsProduct();
             string Error = "";
             string ProductName = "ABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXY";
-            Error = AProduct.Valid(ProductName);
+            Error = AProduct.Valid(ProductName, ProductPrice, ProductQuantity);
             Assert.AreNotEqual(Error, "");
 
         }
@@ -172,7 +202,7 @@ namespace Testclass
             clsProduct AProduct = new clsProduct();
             string Error = "";
             string ProductName = "ABCDEFGHIJKLMNOPQRSTUVWXY";
-            Error = AProduct.Valid(ProductName);
+            Error = AProduct.Valid(ProductName,ProductPrice, ProductQuantity);
             Assert.AreEqual(Error, "");
 
         }
@@ -185,7 +215,7 @@ namespace Testclass
             string Error = "";
             string ProductName = "";
             ProductName = ProductName.PadRight(100, 'a');
-            Error = AProduct.Valid(ProductName);
+            Error = AProduct.Valid(ProductName, ProductPrice, ProductQuantity);
             Assert.AreNotEqual(Error, "");
 
         }
@@ -201,7 +231,7 @@ namespace Testclass
             clsProduct AProduct = new clsProduct();
             string Error = "";
             string ProductPrice = "";
-            Error = AProduct.Valid(ProductPrice);
+            Error = AProduct.Valid(ProductName, ProductPrice, ProductQuantity);
             Assert.AreNotEqual(Error, "");
 
         }
@@ -214,7 +244,7 @@ namespace Testclass
             clsProduct AProduct = new clsProduct();
             string Error = "";
             string ProductPrice = "1.01";
-            Error = AProduct.Valid(ProductPrice);
+            Error = AProduct.Valid(ProductName, ProductPrice, ProductQuantity);
             Assert.AreEqual(Error, "");
 
         }
@@ -227,7 +257,7 @@ namespace Testclass
             clsProduct AProduct = new clsProduct();
             string Error = "";
             string ProductPrice = "12.1";
-            Error = AProduct.Valid(ProductPrice);
+            Error = AProduct.Valid(ProductName, ProductPrice, ProductQuantity);
             Assert.AreEqual(Error, "");
 
         }
@@ -240,8 +270,8 @@ namespace Testclass
             //creates an instance of a class
             clsProduct AProduct = new clsProduct();
             string Error = "";
-            string ProductPrice = "012345678.01";
-            Error = AProduct.Valid(ProductPrice);
+            string ProductPrice = "999999.99";
+            Error = AProduct.Valid(ProductName, ProductPrice, ProductQuantity);
             Assert.AreEqual(Error, "");
 
         }
@@ -253,25 +283,25 @@ namespace Testclass
             //creates an instance of a class
             clsProduct AProduct = new clsProduct();
             string Error = "";
-            string ProductPrice = "01234567890.00";
-            Error = AProduct.Valid(ProductPrice);
+            string ProductPrice = "1000000";
+            Error = AProduct.Valid(ProductName, ProductPrice, ProductQuantity);
             Assert.AreEqual(Error, "");
 
         }
 
 
 
-        //[TestMethod]
-        //public void productpricemaxplusone()
-        //{
-        //    //creates an instance of a class
-        //    clsProduct AProduct = new clsProduct();
-        //    string error = "";
-        //    string ProductPrice = "01234567890.00";
-        //    error = AProduct.Valid(ProductPrice);
-        //    Assert.AreNotEqual(error, "");
+        [TestMethod]
+        public void productpricemaxplusone()
+        {
+            //creates an instance of a class
+            clsProduct AProduct = new clsProduct();
+            string error = "";
+            string ProductPrice = "1000000.01";
+            error = AProduct.Valid(ProductName, ProductPrice, ProductQuantity);
+            Assert.AreNotEqual(error, "");
 
-        //}
+        }
 
         [TestMethod]
         public void ProductPriceMid()
@@ -280,7 +310,7 @@ namespace Testclass
             clsProduct AProduct = new clsProduct();
             string Error = "";
             string ProductPrice = "01234.00";
-            Error = AProduct.Valid(ProductPrice);
+            Error = AProduct.Valid(ProductName, ProductPrice, ProductQuantity);
             Assert.AreEqual(Error, "");
 
         }
@@ -299,7 +329,7 @@ namespace Testclass
             clsProduct AProduct = new clsProduct();
             string Error = "";
             string ProductQuantity = "";
-            Error = AProduct.Valid(ProductQuantity);
+            Error = AProduct.Valid(ProductName, ProductPrice, ProductQuantity);
             Assert.AreNotEqual(Error, "");
 
         }
@@ -312,7 +342,7 @@ namespace Testclass
             clsProduct AProduct = new clsProduct();
             string Error = "";
             string ProductQuantity = "1";
-            Error = AProduct.Valid(ProductQuantity);
+            Error = AProduct.Valid(ProductName, ProductPrice, ProductQuantity);
             Assert.AreEqual(Error, "");
 
         }
@@ -325,7 +355,7 @@ namespace Testclass
             clsProduct AProduct = new clsProduct();
             string Error = "";
             string ProductQuantity = "12";
-            Error = AProduct.Valid(ProductQuantity);
+            Error = AProduct.Valid(ProductName, ProductPrice, ProductQuantity);
             Assert.AreEqual(Error, "");
 
         }
@@ -339,7 +369,7 @@ namespace Testclass
             clsProduct AProduct = new clsProduct();
             string Error = "";
             string ProductQuantity = "999";
-            Error = AProduct.Valid(ProductQuantity);
+            Error = AProduct.Valid(ProductName, ProductPrice, ProductQuantity);
             Assert.AreEqual(Error, "");
 
         }
@@ -352,24 +382,24 @@ namespace Testclass
             clsProduct AProduct = new clsProduct();
             string Error = "";
             string ProductQuantity = "9999";
-            Error = AProduct.Valid(ProductQuantity);
+            Error = AProduct.Valid(ProductName, ProductPrice, ProductQuantity);
             Assert.AreEqual(Error, "");
 
         }
 
 
 
-        //[TestMethod]
-        //public void ProductQuantityMaxPlusOne()
-        //{
-        //    //creates an instance of a class
-        //    clsProduct AProduct = new clsProduct();
-        //    string Error = "";
-        //    string ProductQuantity = "10000";
-        //    Error = AProduct.Valid(ProductQuantity);
-        //    Assert.AreNotEqual(Error, "");
+        [TestMethod]
+        public void ProductQuantityMaxPlusOne()
+        {
+            //creates an instance of a class
+            clsProduct AProduct = new clsProduct();
+            string Error = "";
+            string ProductQuantity = "1000001";
+            Error = AProduct.Valid(ProductName, ProductPrice, ProductQuantity);
+            Assert.AreNotEqual(Error, "");
 
-        //}
+        }
 
         [TestMethod]
         public void ProductQuantityMid()
@@ -378,7 +408,7 @@ namespace Testclass
             clsProduct AProduct = new clsProduct();
             string Error = "";
             string ProductQuantity = "99";
-            Error = AProduct.Valid(ProductQuantity);
+            Error = AProduct.Valid(ProductName, ProductPrice, ProductQuantity);
             Assert.AreEqual(Error, "");
 
         }
@@ -390,8 +420,8 @@ namespace Testclass
             clsProduct AProduct = new clsProduct();
             string Error = "";
             string ProductQuantity = "";
-            ProductQuantity = ProductQuantity.PadRight(100, '1');
-            Error = AProduct.Valid(ProductQuantity);
+            ProductQuantity = ProductQuantity.PadRight(999, '1');
+            Error = AProduct.Valid(ProductName, ProductPrice, ProductQuantity);
             Assert.AreNotEqual(Error, "");
 
         }
@@ -408,15 +438,103 @@ namespace Testclass
 
 
 
+        //found
+
+        [TestMethod]
+        public void TestProductIDFound()
+        {
+            //creates an instance of a class
+            clsProduct AProduct = new clsProduct();
+            //boolean variable to store the result of the validation
+            Boolean Found = false;
+            //boolean variable to record the data is ok
+            Boolean Ok = true;
+            //create some data for testing with the method
+            Int32 ProductID = 1;
+            //invoke the method
+            Found = AProduct.Find(ProductID);
+            // check the product id
+
+            if (AProduct.ProductID != 1)
+            {
+
+                Ok = false;
+            }
+            Assert.IsTrue(Ok);
+        }
 
 
+        [TestMethod]
+        public void TestProductNameFound()
+        {
+
+            clsProduct AProduct = new clsProduct();
+
+            Boolean Found = false;
+            Boolean OK = true;
+            Int32 ProductID = 1;
+            Found = AProduct.Find(ProductID);
+            if (AProduct.ProductName != "iphone7")
+            {
+                OK = false;
+            }
+            Assert.IsTrue(OK);
+
+        }
+
+        [TestMethod]
+        public void TestProductPriceFound()
+        {
+
+            clsProduct AProduct = new clsProduct();
+
+            Boolean Found = false;
+            Boolean OK = true;
+            Int32 ProductID = 1;
+            Found = AProduct.Find(ProductID);
+            if (AProduct.ProductPrice != (decimal)10.10)
+            {
+                OK = false;
+            }
+            Assert.IsTrue(OK);
+
+        }
+
+        [TestMethod]
+        public void TestProductQuantityFound()
+        {
+
+            clsProduct AProduct = new clsProduct();
+
+            Boolean Found = false;
+            Boolean OK = true;
+            Int32 ProductID = 1;
+            Found = AProduct.Find(ProductID);
+            if (AProduct.ProductQuantity != 10)
+            {
+                OK = false;
+            }
+            Assert.IsTrue(OK);
+
+        }
 
 
+        [TestMethod]
+        public void TestActiveFound()
+        {
 
+            clsProduct AProduct = new clsProduct();
+            Boolean Found = false;
+            Boolean OK = true;
+            Int32 ProductID = 1;
+            Found = AProduct.Find(ProductID);
+            if (AProduct.ProductActive != true)
+            {
+                OK = false;
+            }
+            Assert.IsTrue(OK);
 
-
-
-
+        }
 
 
 

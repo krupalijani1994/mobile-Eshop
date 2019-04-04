@@ -1,0 +1,27 @@
+﻿/* Create three unequal columns that floats next to each other */
+.column {
+    float: left;
+    padding: 10px;
+}
+
+    /* Left and right column */
+    .column.side {
+        width: 17%;
+    
+    }
+
+    /* Middle column */
+    .column.middle {
+        width: 19%;
+        float: left;
+        top: -1px;
+        position: relative;
+        left: 2%;
+    }
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}

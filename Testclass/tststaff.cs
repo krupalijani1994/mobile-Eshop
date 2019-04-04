@@ -7,6 +7,14 @@ namespace Testclass
     [TestClass]
     public class tststaff
     {
+        string StaffFirstName=" Angel";
+        string StaffLastName="kaul";
+        string StaffGender= "female";
+        string StaffPhoneNo= "1234567890";
+        string StaffAddress="99 cathrine street";
+        string StaffEmail="abc@gmail.com";
+        string DOB= "";
+
         [TestMethod]
         public void InstanceOk()
         {
@@ -104,20 +112,6 @@ namespace Testclass
             AStaff.DOB = TestData;
             Assert.AreEqual(AStaff.DOB, TestData);
         }
-
-        [TestMethod]
-        public void ValidMethodOk()
-        {
-            //creates an instance of a class
-            clsStaff AStaff = new clsStaff();
-            string Error = "";
-            string TestData = "Angel";
-            Error = AStaff.Valid(TestData);
-            Assert.AreEqual(Error, "");
-
-        }
-
-
         [TestMethod]
         public void StaffActivePropertyOK()
         {
@@ -127,14 +121,20 @@ namespace Testclass
             Assert.AreEqual(AStaff.Active, TestData);
         }
 
+        [TestMethod]
+        public void ValidMethodOk()
+        {
+            //creates an instance of a class
+            clsStaff AStaff = new clsStaff();
+            string Error = "";
+            //string TestData = "Angel";
+            Error = AStaff.Valid(StaffFirstName,StaffLastName,StaffGender,StaffPhoneNo,StaffAddress,StaffEmail,DOB);
+            Assert.AreEqual(Error, "");
+
+        }
 
 
-
-
-
-
-
-
+        
 
 
 
@@ -148,7 +148,7 @@ namespace Testclass
             clsStaff AStaff = new clsStaff();
             string Error = "";
             string StaffAddress = "";
-            Error = AStaff.Valid(StaffAddress);
+            Error = AStaff.Valid(StaffFirstName, StaffLastName, StaffGender, StaffPhoneNo, StaffAddress, StaffEmail, DOB);
             Assert.AreNotEqual(Error, "");
 
         }
@@ -161,7 +161,7 @@ namespace Testclass
             clsStaff AStaff = new clsStaff();
             string Error = "";
             string StaffAddress = "A";
-            Error = AStaff.Valid(StaffAddress);
+            Error = AStaff.Valid(StaffFirstName, StaffLastName, StaffGender, StaffPhoneNo, StaffAddress, StaffEmail, DOB);
             Assert.AreEqual(Error, "");
 
         }
@@ -174,7 +174,7 @@ namespace Testclass
             clsStaff AStaff = new clsStaff();
             string Error = "";
             string StaffAddress = "aa";
-            Error = AStaff.Valid(StaffAddress);
+            Error = AStaff.Valid(StaffFirstName, StaffLastName, StaffGender, StaffPhoneNo, StaffAddress, StaffEmail, DOB);
             Assert.AreEqual(Error, "");
 
         }
@@ -189,7 +189,7 @@ namespace Testclass
             string Error = "";
             string StaffAddress = "";
             StaffAddress = StaffAddress.PadRight(99, 'A');
-            Error = AStaff.Valid(StaffAddress);
+            Error = AStaff.Valid(StaffFirstName, StaffLastName, StaffGender, StaffPhoneNo, StaffAddress, StaffEmail, DOB);
             Assert.AreEqual(Error, "");
 
         }
@@ -202,7 +202,7 @@ namespace Testclass
             string Error = "";
             string StaffAddress = "";
             StaffAddress = StaffAddress.PadRight(100, 'A');
-            Error = AStaff.Valid(StaffAddress);
+            Error = AStaff.Valid(StaffFirstName, StaffLastName, StaffGender, StaffPhoneNo, StaffAddress, StaffEmail, DOB);
             Assert.AreEqual(Error, "");
 
         }
@@ -214,7 +214,7 @@ namespace Testclass
             string Error = "";
             string StaffAddress = "";
             StaffAddress = StaffAddress.PadRight(101, 'A');
-            Error = AStaff.Valid(StaffAddress);
+            Error = AStaff.Valid(StaffFirstName, StaffLastName, StaffGender, StaffPhoneNo, StaffAddress, StaffEmail, DOB);
             Assert.AreNotEqual(Error, "");
 
         }
@@ -227,7 +227,7 @@ namespace Testclass
             string Error = "";
             string StaffAddress = "";
             StaffAddress = StaffAddress.PadRight(50, 'A');
-            Error = AStaff.Valid(StaffAddress);
+            Error = AStaff.Valid(StaffFirstName, StaffLastName, StaffGender, StaffPhoneNo, StaffAddress, StaffEmail, DOB);
             Assert.AreEqual(Error, "");
 
         }
@@ -240,7 +240,7 @@ namespace Testclass
             string Error = "";
             string StaffAddress = "";
             StaffAddress = StaffAddress.PadRight(150, 'A');
-            Error = AStaff.Valid(StaffAddress);
+            Error = AStaff.Valid(StaffFirstName, StaffLastName, StaffGender, StaffPhoneNo, StaffAddress, StaffEmail, DOB);
             Assert.AreNotEqual(Error, "");
 
         }
@@ -297,7 +297,7 @@ namespace Testclass
             clsStaff AStaff = new clsStaff();
             string Error = "";
             string StaffEmail = "";
-            Error = AStaff.Valid(StaffEmail);
+            Error = AStaff.Valid(StaffFirstName, StaffLastName, StaffGender, StaffPhoneNo, StaffAddress, StaffEmail, DOB);
             Assert.AreNotEqual(Error, "");
 
         }
@@ -310,7 +310,7 @@ namespace Testclass
             clsStaff AStaff = new clsStaff();
             string Error = "";
             string StaffEmail = "A";
-            Error = AStaff.Valid(StaffEmail);
+            Error = AStaff.Valid(StaffFirstName, StaffLastName, StaffGender, StaffPhoneNo, StaffAddress, StaffEmail, DOB);
             Assert.AreEqual(Error, "");
 
         }
@@ -323,7 +323,7 @@ namespace Testclass
             clsStaff AStaff = new clsStaff();
             string Error = "";
             string StaffEmail = "aa";
-            Error = AStaff.Valid(StaffEmail);
+            Error = AStaff.Valid(StaffFirstName, StaffLastName, StaffGender, StaffPhoneNo, StaffAddress, StaffEmail, DOB);
             Assert.AreEqual(Error, "");
 
         }
@@ -338,7 +338,7 @@ namespace Testclass
             string Error = "";
             string StaffAddress = "";
             StaffAddress = StaffAddress.PadRight(49, 'A');
-            Error = AStaff.Valid(StaffAddress);
+            Error = AStaff.Valid(StaffFirstName, StaffLastName, StaffGender, StaffPhoneNo, StaffAddress, StaffEmail, DOB);
             Assert.AreEqual(Error, "");
 
         }
@@ -351,158 +351,239 @@ namespace Testclass
             string Error = "";
             string StaffEmail = "";
             StaffEmail = StaffEmail.PadRight(50, 'A');
-            Error = AStaff.Valid(StaffEmail);
+            Error = AStaff.Valid(StaffFirstName, StaffLastName, StaffGender, StaffPhoneNo, StaffAddress, StaffEmail, DOB);
             Assert.AreEqual(Error, "");
 
         }
+        [TestMethod]
+        public void StaffEmailMaxPlusOne()
+        {
+            //creates an instance of a class
+            clsStaff AStaff = new clsStaff();
+            string Error = "";
+            string StaffEmail = "";
+            StaffEmail = StaffEmail.PadRight(51, 'A');
+            Error = AStaff.Valid(StaffFirstName, StaffLastName, StaffGender, StaffPhoneNo, StaffAddress, StaffEmail, DOB);
+            Assert.AreNotEqual(Error, "");
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        //found
+
+        [TestMethod]
+        public void TestStaffIDFound()
+        {
+            //creates an instance of a class
+            clsStaff Astaff = new clsStaff();
+            //boolean variable to store the result of the validation
+            Boolean Found = false;
+            //boolean variable to record the data is ok
+            Boolean Ok = true;
+            //create some data for testing with the method
+            Int32 StaffID = 1;
+            //invoke the method
+            Found = Astaff.Find(StaffID);
+            // check the product id
+
+            if (Astaff.StaffID != 1)
+            {
+
+                Ok = false;
+            }
+            Assert.IsTrue(Ok);
+        }
+
+        [TestMethod]
+        public void TestStaffFirstNameFound()
+        {
+            //creates an instance of a class
+            clsStaff Astaff = new clsStaff();
+            //boolean variable to store the result of the validation
+            Boolean Found = false;
+            //boolean variable to record the data is ok
+            Boolean Ok = true;
+            //create some data for testing with the method
+            Int32 StaffID = 1;
+            //invoke the method
+            Found = Astaff.Find(StaffID);
+            // check the product id
+
+            if (Astaff.StaffFirstName != "Angel")
+            {
+
+                Ok = false;
+            }
+            Assert.IsTrue(Ok);
+        }
+        [TestMethod]
+        public void TestStaffLastNameFound()
+        {
+            //creates an instance of a class
+            clsStaff Astaff = new clsStaff();
+            //boolean variable to store the result of the validation
+            Boolean Found = false;
+            //boolean variable to record the data is ok
+            Boolean Ok = true;
+            //create some data for testing with the method
+            Int32 StaffID = 1;
+            //invoke the method
+            Found = Astaff.Find(StaffID);
+            // check the product id
+
+            if (Astaff.StaffLastName != "kaul")
+            {
+
+                Ok = false;
+            }
+            Assert.IsTrue(Ok);
+        }
+        [TestMethod]
+        public void TestStaffGenderFound()
+        {
+            //creates an instance of a class
+            clsStaff Astaff = new clsStaff();
+            //boolean variable to store the result of the validation
+            Boolean Found = false;
+            //boolean variable to record the data is ok
+            Boolean Ok = true;
+            //create some data for testing with the method
+            Int32 StaffID = 1;
+            //invoke the method
+            Found = Astaff.Find(StaffID);
+            // check the product id
+
+            if (Astaff.StaffGender != "female")
+            {
+
+                Ok = false;
+            }
+            Assert.IsTrue(Ok);
+        }
+
+
+
+
+        [TestMethod]
+        public void TestStaffPhoneNoFound()
+        {
+            //creates an instance of a class
+            clsStaff Astaff = new clsStaff();
+            //boolean variable to store the result of the validation
+            Boolean Found = false;
+            //boolean variable to record the data is ok
+            Boolean Ok = true;
+            //create some data for testing with the method
+            Int32 StaffID = 1;
+            //invoke the method
+            Found = Astaff.Find(StaffID);
+            // check the product id
+
+            if (Astaff.StaffPhoneNo != 1234567890)
+            {
+
+                Ok = false;
+            }
+            Assert.IsTrue(Ok);
+        }
+
+        [TestMethod]
+        public void TestStaffAddressFound()
+        {
+            //creates an instance of a class
+            clsStaff Astaff = new clsStaff();
+            //boolean variable to store the result of the validation
+            Boolean Found = false;
+            //boolean variable to record the data is ok
+            Boolean Ok = true;
+            //create some data for testing with the method
+            Int32 StaffID = 1;
+            //invoke the method
+            Found = Astaff.Find(StaffID);
+            // check the product id
+
+            if (Astaff.StaffAddress != "99 cathrine street")
+            {
+
+                Ok = false;
+            }
+            Assert.IsTrue(Ok);
+        }
+
+        [TestMethod]
+        public void TestStaffEmailFound()
+        {
+            //creates an instance of a class
+            clsStaff Astaff = new clsStaff();
+            //boolean variable to store the result of the validation
+            Boolean Found = false;
+            //boolean variable to record the data is ok
+            Boolean Ok = true;
+            //create some data for testing with the method
+            Int32 StaffID = 1;
+            //invoke the method
+            Found = Astaff.Find(StaffID);
+            // check the product id
+
+            if (Astaff.StaffEmail != "abc@gmail.com")
+            {
+
+                Ok = false;
+            }
+            Assert.IsTrue(Ok);
+        }
+
         //[TestMethod]
-        //public void StaffEmailMaxPlusOne()
+        //public void TestDOBFound()
         //{
         //    //creates an instance of a class
-        //    clsStaff AStaff = new clsStaff();
-        //    string Error = "";
-        //    string StaffAddress = "";
-        //    StaffAddress = StaffAddress.PadRight(51, 'A');
-        //    Error = AStaff.Valid(StaffAddress);
-        //    Assert.AreNotEqual(Error, "");
+        //    clsStaff Astaff = new clsStaff();
+        //    //boolean variable to store the result of the validation
+        //    Boolean Found = false;
+        //    //boolean variable to record the data is ok
+        //    Boolean Ok = true;
+        //    //create some data for testing with the method
+        //    Int32 StaffID = 1;
+        //    //invoke the method
+        //    Found = Astaff.Find(StaffID);
+        //    // check the product id
 
+        //    if (Astaff.DOB != Convert.ToDateTime("7/02/2019"))
+        //    {
+
+        //        Ok = false;
+        //    }
+        //    Assert.IsTrue(Ok);
         //}
 
-        [TestMethod]
-        public void StaffEmailMid()
-        {
-            //creates an instance of a class
-            clsStaff AStaff = new clsStaff();
-            string Error = "";
-            string StaffAddress = "";
-            StaffAddress = StaffAddress.PadRight(25, 'A');
-            Error = AStaff.Valid(StaffAddress);
-            Assert.AreEqual(Error, "");
-        }
 
-        [TestMethod]
-        public void StaffEmailExtermeMax()
-        {
-            //creates an instance of a class
-            clsStaff AStaff = new clsStaff();
-            string Error = "";
-            string StaffAddress = "";
-            StaffAddress = StaffAddress.PadRight(200, 'A');
-            Error = AStaff.Valid(StaffAddress);
-            Assert.AreNotEqual(Error, "");
-
-        }
-
-
-        //Staff First name-------------------------------
-
-        [TestMethod]
-        public void StaffFirstNameMinMinusOne()
-        {
-            //creates an instance of a class
-            clsStaff AStaff = new clsStaff();
-            string Error = "";
-            string StaffFirstName = "";
-            Error = AStaff.Valid(StaffFirstName);
-            Assert.AreNotEqual(Error, "");
-
-        }
-
-
-        [TestMethod]
-        public void StaffFirstNameMin()
-        {
-            //creates an instance of a class
-            clsStaff AStaff = new clsStaff();
-            string Error = "";
-            string StaffFirstName = "A";
-            Error = AStaff.Valid(StaffFirstName);
-            Assert.AreEqual(Error, "");
-
-        }
-
-
-        [TestMethod]
-        public void StaffFirstNameMinplusOne()
-        {
-            //creates an instance of a class
-            clsStaff AStaff = new clsStaff();
-            string Error = "";
-            string StaffFirstName = "aa";
-            Error = AStaff.Valid(StaffFirstName);
-            Assert.AreEqual(Error, "");
-
-        }
-
-
-
-        [TestMethod]
-        public void StaffFirstNameMaxMinusOne()
-        {
-            //creates an instance of a class
-            clsStaff AStaff = new clsStaff();
-            string Error = "";
-            string StaffFirstName = "";
-            StaffFirstName = StaffFirstName.PadRight(19, 'A');
-            Error = AStaff.Valid(StaffFirstName);
-            Assert.AreEqual(Error, "");
-
-        }
-
-        [TestMethod]
-        public void StaffFirstNameMax()
-        {
-            //creates an instance of a class
-            clsStaff AStaff = new clsStaff();
-            string Error = "";
-            string StaffFirstName = "";
-            StaffFirstName = StaffFirstName.PadRight(20, 'A');
-            Error = AStaff.Valid(StaffFirstName);
-            Assert.AreEqual(Error, "");
-
-        }
-        //[TestMethod]
-        //public void StaffFirstNameMaxPlusOne()
-        //{
-        //    //creates an instance of a class
-        //    clsStaff AStaff = new clsStaff();
-        //    string Error = "";
-        //    string StaffFirstName = "";
-        //    StaffFirstName = StaffFirstName.PadRight(21, 'A');
-        //    Error = AStaff.Valid(StaffFirstName);
-        //    Assert.AreNotEqual(Error, "");
-
-        //}
-
-        [TestMethod]
-        public void StaffFirstNameMid()
-        {
-            //creates an instance of a class
-            clsStaff AStaff = new clsStaff();
-            string Error = "";
-            string StaffAddress = "";
-            StaffAddress = StaffAddress.PadRight(10, 'A');
-            Error = AStaff.Valid(StaffAddress);
-            Assert.AreEqual(Error, "");
-
-        }
-
-        [TestMethod]
-        public void StaffFirstNameExtermeMax()
-        {
-            //creates an instance of a class
-            clsStaff AStaff = new clsStaff();
-            string Error = "";
-            string StaffFirstName = "";
-            StaffFirstName = StaffFirstName.PadRight(150, 'A');
-            Error = AStaff.Valid(StaffFirstName);
-            Assert.AreNotEqual(Error, "");
-
-        }
-
-
-
-
+        
 
 
 

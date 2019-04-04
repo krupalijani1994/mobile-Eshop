@@ -4,6 +4,7 @@
 
 body {
     margin: 0;
+    background-color: #FFFFFF;
 }
 
 /* Style the header */
@@ -41,16 +42,16 @@ body {
 
     /* Left and right column */
     .column.side {
-        width: 25%;
+        width: 17%;
     }
 
     /* Middle column */
     .column.middle {
-        width: 50%;
-        float:right;
-        top:300px;
+        width: 19%;
+        float:left;
+        top:265px;
         position:relative;
-        left:15%;
+        left:-56%;
     }
 
 /* Clear floats after the columns */
@@ -59,10 +60,6 @@ body {
     display: table;
     clear: both;
 }
-
-
-
-
 
 
 
@@ -131,3 +128,194 @@ li {
 
 
 
+
+/*ProductsPage*/
+
+.products {
+    padding: 28px 0 0 6px;
+}
+
+.product-frame {
+    display: inline;
+    float: left;
+    width: 300px;
+    padding: 0 0 45px;
+    margin: 51px 0px 0px 3px;
+}
+
+.product {
+    position: relative;
+    padding: 8px 0 0 6px;
+    width: 265px;
+    background: url(images/product.png) repeat-x 0 0;
+}
+
+.product a.view-button {
+        position: absolute;
+        z-index: 20;
+        top: 158px;
+        left: 148px;
+        display: block;
+        width: 137px;
+        height: 25px;
+        background: url(../images/view-button.png) no-repeat 0 0;
+    }
+
+.product a.view-button {
+        padding-left: 37px;
+   
+        font-family: Helvetica, arial, sans-serif;
+        font-size: 14px;
+        line-height: 28px;
+        color: #8e2e00;
+        text-shadow: 1px 1px #f6c474;
+    }
+
+        .product a.view-button:hover {
+            text-decoration: none;
+        }
+
+.product p {
+        padding-left: 8px;
+    }
+
+.product p.product-info {
+            padding-top: 14px;
+        }
+        
+.product p.model {
+            padding-top: 9px;
+            font-family: Verdana, arial, sans-serif;
+            font-size: 14px;
+            line-height: 16px;
+            color: #f6c80e;
+            text-transform: uppercase;
+        }
+
+            
+        
+.product p.model span {
+                font-size: 12px;
+                color: #ff7200;
+                line-height: 13px;
+            }
+
+.product .img-holder
+{
+        width: 259px;
+        padding: 0 0 0 6px;
+        background: url(images/img-holder.png) no-repeat left 0;
+    }
+
+.product .img-holder img {
+            display: block;
+            width: 252px;
+            height: 167px;
+            border: solid 3px #b9b9b9;
+            border-left: 0;
+        }
+
+.product .img-bottom {
+        width: 258px;
+        height: 7px;
+        line-height: 0;
+        font-size: 0;
+        background: url(images/img-bottom.png) no-repeat 0 0;
+    }
+
+    
+.product .price-box {
+        display: inline;
+        float: right;
+        margin-right: 7px;
+        padding: 7px 0 4px 4px;
+        width: 80px;
+        height: 76px;
+        background: #282828;
+        border: solid 1px #454545;
+    }
+.product .price-box p {
+            padding-left: 2px;
+            font-size: 18px;
+            color: #fff;
+        }
+
+.product .price-box p.price {
+                padding-left: 0;
+                font-size: 26px;
+                color: #f5cb23;
+            }
+.product .price-box p.price span.dollar {
+                    font-size: 20px;
+                    color: #c03f00;
+                }
+
+                
+ .product .price-box p.price sup {
+                    font-size: 15px;
+                }
+
+
+.UserRegister {
+    font-size: 30px;
+    font-style: oblique;
+    color: darkblue;
+    text-align: center;
+}
+
+
+.login{
+
+    background-color:black;
+    color:white;
+    margin-top:120px;
+}
+
+
+
+
+/*search button*/
+
+.search {
+    width: 100%;
+    position: relative
+}
+
+.searchTerm {
+    float: left;
+    width: 100%;
+    border: 3px solid #00B4CC;
+    padding: 5px;
+    height: 50px;
+    border-radius: 5px;
+    outline: none;
+    color: #9DBFAF;
+}
+
+    .searchTerm:focus {
+        color: #00B4CC;
+    }
+
+.searchButton {
+    position: absolute;
+    right: -50px;
+    width: 130px;
+    height: 45px;
+    border: 1px solid #00B4CC;
+    background: #00B4CC;
+    text-align: center;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    top: 66px;
+}
+
+/*Resize the wrap to see the search bar change!*/
+.wrap {
+    width: 30%;
+    position: absolute;
+    top: 14%;
+    left: 81%;
+    transform: translate(-50%, -50%);
+}

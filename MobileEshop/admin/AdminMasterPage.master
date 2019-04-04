@@ -1,0 +1,148 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="AdminMasterPage.master.cs" Inherits="admin_AdminMasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="css/admin.css" rel="stylesheet" />
+    <link href="css/slider_effects.css" rel="stylesheet" />
+
+
+<script language="javascript" type="text/javascript">
+
+function clearText(field)
+{
+    if (field.defaultValue == field.value) field.value = '';
+    else if (field.value == '') field.value = field.defaultValue;
+}
+</script>
+   
+    <link href="css/menuStyleSheet.css" rel="stylesheet" />
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/ddsmoothmenu.js">
+
+
+</script>
+
+<script type="text/javascript">
+
+ddsmoothmenu.init({
+	mainmenuid: "templatemo_menu", //menu DIV id
+	orientation: 'h', //Horizontal or vertical menu: Set to "h" or "v"
+	classname: 'ddsmoothmenu', //class added to menu's outer DIV
+	//customtheme: ["#1c5a80", "#18374a"],
+	contentsource: "markup" //"markup" or ["container_id", "path_to_menu_file"]
+})
+
+</script>
+</head>
+<body>
+    <form id="form1" runat="server">
+
+
+
+
+         
+    
+    <div id="templatemo_wrapper">
+	<div id="templatemo_top">
+   		<div id="templatemo_search">
+             </div>
+    </div> <!-- end of top -->
+    
+    <div id="templatemo_header2">
+    	<div id="site_title">
+            <asp:Label ID="lbluser" runat="server" Text="" Font-Size="X-Small"></asp:Label></div>
+            <a><asp:Button ID="Button1" runat="server" Text="Logout" CssClass="logout" OnClick="Button1_Click"/></a>
+            <div id="templatemo_menu" class="ddsmoothmenu">
+            <ul>
+                <li><a href="Default.aspx">Home</a></li>
+                            
+                
+                <li><a>Staff</a>
+                    <ul>
+                        <li><a href="view Staff.aspx" >Existing Staff</a></li>
+                        <li><a href="AddStaff.aspx" >Register Staff</a></li>
+                         <li><a href="adminregistration.aspx" >Register new admin</a></li>
+                                                  
+                     </ul>
+                          </li>
+                          
+                <li><a>Products</a>
+                    <ul>
+				
+                        <li><a href="AddProducts.aspx">Add Product</a></li>
+                        <li><a href="#" >All Products</a></li>
+                        
+                      
+                    </ul>
+                </li>
+                          
+                          <li><a>Customer</a>
+                    <ul>
+				
+                        <li><a href="view customer.aspx"> Customer Details</a></li>
+                        <li><a href="#"> Track orders </a></li>
+                       
+                      
+                    </ul>
+                </li>
+				
+                
+            
+                    	
+                        <li><a href="generate reports.aspx">Reports</a></li>
+                       
+                         <li><a href="SeeFeedback.aspx">Feedbacks</a></li>
+                        <li><a href="change password.aspx" class="cpassheadbtn">Change Password</a></li>
+                   </ul>
+             
+               
+              
+                            
+              
+   
+            <br style="clear: left" />
+        </div> <!-- end of menu -->
+    </div> <!-- end of header -->
+    
+     <!-- end of middle -->
+    
+    <div id="templatemo_main_wrapper"> <span class="top"></span><span class="bottom"></span>
+    	<div id="templatemo_main">
+    	
+       
+
+
+
+
+
+
+      
+
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+ 
+</div>
+        <div class="cleaner"></div>
+</div>
+    </div><!-- end of main page-->
+         <div id="templatemo_footer">
+    	
+        
+       <div class="cleaner"></div>
+    </div>
+     <!-- end of wrapper -->
+
+<div id="templatemo_cr_bar_wrapper">
+	<div id="templatemo_cr_bar">
+    	Copyright © Mobile E-shop
+</div>
+    </form>
+</body>
+</html>

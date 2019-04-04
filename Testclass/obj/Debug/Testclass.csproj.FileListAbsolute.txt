@@ -14,3 +14,35 @@ H:\Desktop\third year\Final year project\Mobile E-shop\Testclass\bin\Debug\Micro
 H:\Desktop\third year\Final year project\Mobile E-shop\Testclass\obj\Debug\Testclass.csproj.CopyComplete
 H:\Desktop\third year\Final year project\Mobile E-shop\Testclass\obj\Debug\Testclass.dll
 H:\Desktop\third year\Final year project\Mobile E-shop\Testclass\obj\Debug\Testclass.pdb
+E:\Mobile E-shop\Testclass\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+E:\Mobile E-shop\Testclass\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+E:\Mobile E-shop\Testclass\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+E:\Mobile E-shop\Testclass\bin\Debug\Testclass.dll
+E:\Mobile E-shop\Testclass\bin\Debug\Testclass.pdb
+E:\Mobile E-shop\Testclass\bin\Debug\ClassLibrary.dll
+E:\Mobile E-shop\Testclass\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+E:\Mobile E-shop\Testclass\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+E:\Mobile E-shop\Testclass\bin\Debug\ClassLibrary.pdb
+E:\Mobile E-shop\Testclass\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+E:\Mobile E-shop\Testclass\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+E:\Mobile E-shop\Testclass\obj\Debug\Testclass.csprojAssemblyReference.cache
+E:\Mobile E-shop\Testclass\obj\Debug\Testclass.csproj.CoreCompileInputs.cache
+E:\Mobile E-shop\Testclass\obj\Debug\Testclass.csproj.CopyComplete
+E:\Mobile E-shop\Testclass\obj\Debug\Testclass.dll
+E:\Mobile E-shop\Testclass\obj\Debug\Testclass.pdb
+H:\Desktop\Mobile Eshop\Mobile E-shop\Testclass\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+H:\Desktop\Mobile Eshop\Mobile E-shop\Testclass\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+H:\Desktop\Mobile Eshop\Mobile E-shop\Testclass\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+H:\Desktop\Mobile Eshop\Mobile E-shop\Testclass\bin\Debug\Testclass.dll
+H:\Desktop\Mobile Eshop\Mobile E-shop\Testclass\bin\Debug\Testclass.pdb
+H:\Desktop\Mobile Eshop\Mobile E-shop\Testclass\bin\Debug\ClassLibrary.dll
+H:\Desktop\Mobile Eshop\Mobile E-shop\Testclass\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+H:\Desktop\Mobile Eshop\Mobile E-shop\Testclass\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+H:\Desktop\Mobile Eshop\Mobile E-shop\Testclass\bin\Debug\ClassLibrary.pdb
+H:\Desktop\Mobile Eshop\Mobile E-shop\Testclass\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+H:\Desktop\Mobile Eshop\Mobile E-shop\Testclass\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+H:\Desktop\Mobile Eshop\Mobile E-shop\Testclass\obj\Debug\Testclass.csprojAssemblyReference.cache
+H:\Desktop\Mobile Eshop\Mobile E-shop\Testclass\obj\Debug\Testclass.csproj.CoreCompileInputs.cache
+H:\Desktop\Mobile Eshop\Mobile E-shop\Testclass\obj\Debug\Testclass.csproj.CopyComplete
+H:\Desktop\Mobile Eshop\Mobile E-shop\Testclass\obj\Debug\Testclass.dll
+H:\Desktop\Mobile Eshop\Mobile E-shop\Testclass\obj\Debug\Testclass.pdb

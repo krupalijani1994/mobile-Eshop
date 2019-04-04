@@ -4,3 +4,15 @@ H:\Desktop\third year\Final year project\Mobile E-shop\ClassLibrary\obj\Debug\Cl
 H:\Desktop\third year\Final year project\Mobile E-shop\ClassLibrary\obj\Debug\ClassLibrary.dll
 H:\Desktop\third year\Final year project\Mobile E-shop\ClassLibrary\obj\Debug\ClassLibrary.pdb
 H:\Desktop\third year\Final year project\Mobile E-shop\ClassLibrary\obj\Debug\ClassLibrary.csprojAssemblyReference.cache
+E:\Mobile E-shop\ClassLibrary\bin\Debug\ClassLibrary.dll
+E:\Mobile E-shop\ClassLibrary\bin\Debug\ClassLibrary.pdb
+E:\Mobile E-shop\ClassLibrary\obj\Debug\ClassLibrary.csprojAssemblyReference.cache
+E:\Mobile E-shop\ClassLibrary\obj\Debug\ClassLibrary.csproj.CoreCompileInputs.cache
+E:\Mobile E-shop\ClassLibrary\obj\Debug\ClassLibrary.dll
+E:\Mobile E-shop\ClassLibrary\obj\Debug\ClassLibrary.pdb
+H:\Desktop\Mobile Eshop\Mobile E-shop\ClassLibrary\bin\Debug\ClassLibrary.dll
+H:\Desktop\Mobile Eshop\Mobile E-shop\ClassLibrary\bin\Debug\ClassLibrary.pdb
+H:\Desktop\Mobile Eshop\Mobile E-shop\ClassLibrary\obj\Debug\ClassLibrary.csprojAssemblyReference.cache
+H:\Desktop\Mobile Eshop\Mobile E-shop\ClassLibrary\obj\Debug\ClassLibrary.csproj.CoreCompileInputs.cache
+H:\Desktop\Mobile Eshop\Mobile E-shop\ClassLibrary\obj\Debug\ClassLibrary.dll
+H:\Desktop\Mobile Eshop\Mobile E-shop\ClassLibrary\obj\Debug\ClassLibrary.pdb

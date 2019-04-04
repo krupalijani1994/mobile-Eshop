@@ -5,6 +5,7 @@
 <html>
 <head runat="server">
     <title></title>
+ 
     <asp:ContentPlaceHolder id="head" runat="server">
                 </asp:ContentPlaceHolder>
 </head>
@@ -13,23 +14,29 @@
 
         <link rel="stylesheet" href="css/StyleSheet.css">
             
-
+		
 <div class="topnav">
    <ul>
-                <li><a href="#home">Home</a></li>
-        <li class="dropdown"><a href=" abcd" class="dropbtn">Products</a>
+                <li><a href="default.aspx">Home</a></li>
+                 <li class="dropdown">
+                     <a href="#" class="dropbtn">Products</a>
                     <div class="dropdown-content">
-                        <a href="#">Services</a> <a href="#">All Products</a> <a href="#">Track Order</a>
+                        <a href="#">Services</a>
+                        <a href="products.aspx">All Products</a>
+                        <a href="#">Track Order</a>
                     </div>
-                <li><a href="#news">Review and Compare</a></li>
-                <li><a href="#news">Feedback</a></li>
-         <li class="dropdown"><a href=" abcd" class="dropbtn">Account</a>
+                <li><a href="review and compare.aspx">Review and Compare</a></li>
+                <li><a href="#">Feedback</a></li>
+         <li class="dropdown"><a href="#" class="dropbtn">Account</a>
                     <div class="dropdown-content">
-                        <a href="#">Change details</a> <a href="#">View Orders</a> <a href="#">Logout</a>
+                        <a href="editprofile.aspx">Change details</a>
+						 <a href="ChangePassword.aspx">Change Password</a>
+                        <a href="PurchaseHistory.aspx">View Orders</a> 
+                        <a href="#">Logout</a>
                     </div>
         </li>
-                        <li><a href="#home" style="position:fixed; left:90%;"> Register </a></li>
-
+                        <li><a href="#home" style="position:fixed; left:90%;"> Logout </a></li>
+ 
             </ul>
 </div>
 
