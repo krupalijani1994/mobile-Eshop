@@ -10,9 +10,9 @@ namespace Testclass
     public class tstproduct
     {
         
-        string ProductName="iphone7";
-        string ProductPrice= "10.10";
-        string ProductQuantity = "10";
+        string ProductName="iphone4";
+        string ProductPrice= "522.00";
+        string ProductQuantity = "22";
         
 
         // performing property test
@@ -41,7 +41,7 @@ namespace Testclass
             //creates an instance of a class
             clsProduct AProduct = new clsProduct();
             Boolean Found = false;
-            Int32 ProductID = 1;
+            Int32 ProductID = 193;
             Found = AProduct.Find(ProductID);
             Assert.IsTrue(Found);
 
@@ -429,16 +429,7 @@ namespace Testclass
 
 
 
-
-
-
-
-
-
-
-
-
-        //found
+                //found
 
         [TestMethod]
         public void TestProductIDFound()
@@ -450,12 +441,12 @@ namespace Testclass
             //boolean variable to record the data is ok
             Boolean Ok = true;
             //create some data for testing with the method
-            Int32 ProductID = 1;
+            Int32 ProductID = 193;
             //invoke the method
             Found = AProduct.Find(ProductID);
             // check the product id
 
-            if (AProduct.ProductID != 1)
+            if (AProduct.ProductID != 193)
             {
 
                 Ok = false;
@@ -472,9 +463,9 @@ namespace Testclass
 
             Boolean Found = false;
             Boolean OK = true;
-            Int32 ProductID = 1;
+            Int32 ProductID = 193;
             Found = AProduct.Find(ProductID);
-            if (AProduct.ProductName != "iphone7")
+            if (AProduct.ProductName != "iphone4")
             {
                 OK = false;
             }
@@ -490,9 +481,9 @@ namespace Testclass
 
             Boolean Found = false;
             Boolean OK = true;
-            Int32 ProductID = 1;
+            Int32 ProductID = 193;
             Found = AProduct.Find(ProductID);
-            if (AProduct.ProductPrice != (decimal)10.10)
+            if (AProduct.ProductPrice != (decimal)522.00)
             {
                 OK = false;
             }
@@ -508,9 +499,9 @@ namespace Testclass
 
             Boolean Found = false;
             Boolean OK = true;
-            Int32 ProductID = 1;
+            Int32 ProductID = 193;
             Found = AProduct.Find(ProductID);
-            if (AProduct.ProductQuantity != 10)
+            if (AProduct.ProductQuantity != 22)
             {
                 OK = false;
             }
@@ -526,7 +517,7 @@ namespace Testclass
             clsProduct AProduct = new clsProduct();
             Boolean Found = false;
             Boolean OK = true;
-            Int32 ProductID = 1;
+            Int32 ProductID = 193;
             Found = AProduct.Find(ProductID);
             if (AProduct.ProductActive != true)
             {

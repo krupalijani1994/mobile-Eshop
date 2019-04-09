@@ -66,7 +66,7 @@ public partial class customer_ProductPurchase : System.Web.UI.Page
 		// any address where the email will be sending
 		var toAddress = txtemail.Text.ToString();
 		//Password of your gmail address
-		const string fromPassword = "moulik6167";
+		const string fromPassword = "";
 		// Passing the values and make a email formate to display
 		body += "Thank you for purchasing with MobileEshop \n";
 		body += "uname: "+ txtname.Text + "\n";

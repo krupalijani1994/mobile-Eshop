@@ -41,7 +41,7 @@ public partial class ProductDetails : System.Web.UI.Page
 			lblpro.Text = dr["ProductName"].ToString();
 			lbldateail.Text = dr["ProductDetails"].ToString();
 			lblprc.Text = dr["ProductPrice"].ToString();
-			HyperLink1.NavigateUrl = "ProductPurchase.aspx?ProductID=" + id;
+			//HyperLink1.NavigateUrl = "ProductPurchase.aspx?ProductID=" + id;
 
 
 		}

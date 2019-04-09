@@ -25,7 +25,19 @@
         <asp:Label ID="lblprc" runat="server" Text="" Width="150px"></asp:Label>
 
       </p>
-      <p><asp:HyperLink ID="HyperLink1" runat="server" CssClass="btnbuynow">Buy Now</asp:HyperLink></p>
+     <p>
+        <asp:Label ID="lblquantity" runat="server" Text="Quantity:" Width="150px"></asp:Label>
+         <asp:DropDownList ID="DropDownList1" runat="server">
+             <asp:ListItem>1</asp:ListItem>
+             <asp:ListItem>2</asp:ListItem>
+             <asp:ListItem>3</asp:ListItem>
+             <asp:ListItem>4</asp:ListItem>
+             <asp:ListItem>5</asp:ListItem>
+         </asp:DropDownList>
+
+         <asp:Button ID="checkout" runat="server" Text="Add to cart" />
+      </p>
+      <%--<p><asp:HyperLink ID="HyperLink1" runat="server" CssClass="btnbuynow">Buy Now</asp:HyperLink></p>--%>
     
       
 

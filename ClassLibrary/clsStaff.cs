@@ -8,7 +8,7 @@ namespace ClassLibrary
         private string mStaffFirstName;
         private string mStaffLastName;
         private string mStaffGender;
-        private int mStaffPhoneNo;
+        private string mStaffPhoneNo;
         private string mStaffAddress;
         private string mStaffEmail;
         private DateTime mDOB;
@@ -90,7 +90,7 @@ namespace ClassLibrary
                 mStaffGender = value;
             }
         }
-        public int StaffPhoneNo {
+        public string StaffPhoneNo {
 
             get
             {
@@ -209,7 +209,7 @@ namespace ClassLibrary
                 mStaffFirstName = Convert.ToString(DB.DataTable.Rows[0]["StaffFirstName"]);
                 mStaffLastName = Convert.ToString(DB.DataTable.Rows[0]["StaffLastName"]);
                 mStaffGender = Convert.ToString(DB.DataTable.Rows[0]["StaffGender"]);
-                mStaffPhoneNo = Convert.ToInt32(DB.DataTable.Rows[0]["StaffPhoneNo"]);
+                mStaffPhoneNo = Convert.ToString(DB.DataTable.Rows[0]["StaffPhoneNo"]);
                 mStaffAddress = Convert.ToString(DB.DataTable.Rows[0]["StaffAddress"]);
                 mStaffEmail = Convert.ToString(DB.DataTable.Rows[0]["StaffEmail"]);
                 mDOB = Convert.ToDateTime(DB.DataTable.Rows[0]["DOB"]);

@@ -25,7 +25,7 @@
 	
 
 
-<h2 >Automatic Slideshow</h2>
+<h2>Mobiles</h2>
 
 <div style="max-width:200px" >
     

@@ -26,8 +26,8 @@
                         <a href="#">Track Order</a>
                     </div>
                 <li><a href="review and compare.aspx">Review and Compare</a></li>
-                <li><a href="#">Feedback</a></li>
-         <li class="dropdown"><a href="#" class="dropbtn">Account</a>
+                <li><a href="feedback.aspx">Feedback</a></li>
+        <li class="dropdown"><a href="#" class="dropbtn">Account</a>
                     <div class="dropdown-content">
                         <a href="editprofile.aspx">Change details</a>
 						 <a href="ChangePassword.aspx">Change Password</a>
@@ -35,13 +35,10 @@
                         <a href="#">Logout</a>
                     </div>
         </li>
-                        <li><a href="#home" style="position:fixed; left:90%;"> Logout </a></li>
+       <asp:Button ID="Button1" style="position:fixed; left:96%; top:13px;" runat="server" Text="Button" />
+                        <%--<li><a href="#home" style="position:fixed; left:90%;"> Logout </a></li>--%>
  
             </ul>
-</div>
-
-
-    <div>
 
 
 

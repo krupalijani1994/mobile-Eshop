@@ -29,30 +29,30 @@ public partial class customer_PurchaseHistory : System.Web.UI.Page
         }
     }
 
-        //string uid = Session["uid"].ToString();
-        //////String allqry = "select * from  tbl_userpayment where uname = session.uid";
-        ////string query = "Select * from tbl_userpayment where uid=@uid";
-        ////SqlCommand cmd = new SqlCommand(query, con);
-        ////SqlDataAdapter da = new SqlDataAdapter(cmd);
-        ////DataSet ds = new DataSet();
+    //string uid = Session["uid"].ToString();
+    ////String allqry = "select * from  tbl_userpayment where uname = session.uid";
+    //string query = "Select * from tbl_userpayment where uid=@uid";
+    //SqlCommand cmd = new SqlCommand(query, con);
+    //SqlDataAdapter da = new SqlDataAdapter(cmd);
+    //DataSet ds = new DataSet();
 
-        ////cmd.Parameters.AddWithValue("@uid", uid);
-        ////da.Fill(ds);
-        ////GridView1.DataSource = ds;
-        ////GridView1.DataBind();
-        ////con.Close();
-        //con.Open();
-        //String qry = "Select * from tbl_userpayment JOIN tbl_register ON tbl_userpayment.uname = tbl_register.username WHERE uname ='" + uid + "'";
-        //SqlCommand cmd = new SqlCommand(qry, con);
-        //SqlDataAdapter da = new SqlDataAdapter(cmd);
-        //DataSet ds = new DataSet();
-        //cmd.ExecuteNonQuery();
-        ////Response.Write("<script type='text/javascript'>alert('Successfully Registration..!');</script>");
-        ////Response.Redirect("view customer.aspx");
-        //da.Fill(ds);
-        //GridView1.DataSource = ds;
-        //GridView1.DataBind();
-        //con.Close();
+    //cmd.Parameters.AddWithValue("@uid", uid);
+    //da.Fill(ds);
+    //GridView1.DataSource = ds;
+    //GridView1.DataBind();
+    //con.Close();
+    //con.Open();
+    //    String qry = "Select * from tbl_userpayment JOIN tbl_register ON tbl_userpayment.uname = tbl_register.username WHERE uname ='" + uid + "'";
+    //SqlCommand cmd = new SqlCommand(qry, con);
+    //SqlDataAdapter da = new SqlDataAdapter(cmd);
+    //DataSet ds = new DataSet();
+    //cmd.ExecuteNonQuery();
+    //    Response.Write("<script type='text/javascript'>alert('Successfully Registration..!');</script>");
+    //    Response.Redirect("view customer.aspx");
+    //    da.Fill(ds);
+    //    GridView1.DataSource = ds;
+    //    GridView1.DataBind();
+    //    con.Close();
 
 
 

@@ -72,7 +72,7 @@ namespace Testclass
             TestItem.StaffFirstName = "Angel";
             TestItem.StaffLastName = "kaul";
             TestItem.StaffGender = "female";
-            TestItem.StaffPhoneNo = 1234567890;
+            TestItem.StaffPhoneNo = "1234567890";
             TestItem.StaffAddress = "99 cathrine street";
             TestItem.StaffEmail = "abc@gmail.com";
            
@@ -103,7 +103,7 @@ namespace Testclass
             TestItem.StaffFirstName = "Angel";
             TestItem.StaffLastName = "kaul";
             TestItem.StaffGender = "female";
-            TestItem.StaffPhoneNo = 1234567890;
+            TestItem.StaffPhoneNo = "1234567890";
             TestItem.StaffAddress = "99 cathrine street";
             TestItem.StaffEmail = "abc@gmail.com";
 
@@ -129,7 +129,7 @@ namespace Testclass
             TestStaff.StaffFirstName = "Angel";
             TestStaff.StaffLastName = "kaul";
             TestStaff.StaffGender = "female";
-            TestStaff.StaffPhoneNo = 1234567890;
+            TestStaff.StaffPhoneNo = "1234567890";
             TestStaff.StaffAddress = "99 cathrine street";
             TestStaff.StaffEmail = "abc@gmail.com";
             //assign the data to the property
@@ -194,10 +194,10 @@ namespace Testclass
             Int32 PrimaryKey = 0;
             //set its properties
             TestItem.StaffID = 1;
-            TestItem.StaffFirstName = "Angele";
-            TestItem.StaffLastName = "kaule";
-            TestItem.StaffGender = "male";
-            TestItem.StaffPhoneNo = 12345678;
+            TestItem.StaffFirstName = "Angel";
+            TestItem.StaffLastName = "kaul";
+            TestItem.StaffGender = "female";
+            TestItem.StaffPhoneNo = "12345678";
             TestItem.StaffAddress = "99 cathrine street";
             TestItem.StaffEmail = "abc@gmail.com";
             TestItem.DOB = DateTime.Now.Date;
@@ -227,7 +227,7 @@ namespace Testclass
             TestItem.StaffFirstName = "Angele";
             TestItem.StaffLastName = "kaule";
             TestItem.StaffGender = "male";
-            TestItem.StaffPhoneNo = 1234567890;
+            TestItem.StaffPhoneNo = "1234567890";
             TestItem.StaffAddress = "99 cathrine street";
             TestItem.StaffEmail = "abc@gmail.com";
             TestItem.DOB = DateTime.Now.Date;
@@ -265,7 +265,7 @@ namespace Testclass
             TestItem.StaffFirstName = "Angel";
             TestItem.StaffLastName = "kaul";
             TestItem.StaffGender = "female";
-            TestItem.StaffPhoneNo = 1234567890;
+            TestItem.StaffPhoneNo = "1234567890";
             TestItem.StaffAddress = "99 cathrine street";
             TestItem.StaffEmail = "abc@gmail.com";
             TestItem.DOB = DateTime.Now.Date;
@@ -280,7 +280,7 @@ namespace Testclass
             TestItem.StaffFirstName = "Angel";
             TestItem.StaffLastName = "kaul";
             TestItem.StaffGender = "female";
-            TestItem.StaffPhoneNo = 1234567890;
+            TestItem.StaffPhoneNo = "1234567890";
             TestItem.StaffAddress = "99 cathrine street";
             TestItem.StaffEmail = "abc@gmail.com";
             TestItem.DOB = DateTime.Now.Date;

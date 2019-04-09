@@ -97,7 +97,7 @@ namespace Testclass
         {
            
             clsStaff AStaff = new clsStaff();
-            Int32 TestData = 1234567890;
+            string TestData = "1234567890";
             AStaff.StaffPhoneNo = TestData;
             Assert.AreEqual(AStaff.StaffPhoneNo, TestData);
         }
@@ -505,7 +505,7 @@ namespace Testclass
             Found = Astaff.Find(StaffID);
             // check the product id
 
-            if (Astaff.StaffPhoneNo != 1234567890)
+            if (Astaff.StaffPhoneNo != "1234567890")
             {
 
                 Ok = false;

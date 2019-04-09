@@ -42,7 +42,7 @@ namespace ClassLibrary
                 Astaff.StaffFirstName = Convert.ToString(DB.DataTable.Rows[Index]["StaffFirstName"]);
                 Astaff.StaffLastName = Convert.ToString(DB.DataTable.Rows[Index]["StaffLastName"]);
                 Astaff.StaffGender = Convert.ToString(DB.DataTable.Rows[Index]["StaffGender"]);
-                Astaff.StaffPhoneNo = Convert.ToInt32(DB.DataTable.Rows[Index]["StaffPhoneNo"]);
+                Astaff.StaffPhoneNo = Convert.ToString(DB.DataTable.Rows[Index]["StaffPhoneNo"]);
                 Astaff.StaffAddress = Convert.ToString(DB.DataTable.Rows[Index]["StaffAddress"]);
                 Astaff.StaffEmail = Convert.ToString(DB.DataTable.Rows[Index]["StaffEmail"]);
                 Astaff.DOB = Convert.ToDateTime(DB.DataTable.Rows[Index]["DOB"]);
